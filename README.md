@@ -6,7 +6,7 @@ Provides the AeroGear UnifiedPush Server running on top of JBoss Application Ser
 The AeroGear UnifiedPush Server defaults to using MySQL. When creating your application, you'll also want to add the MySQL cartridge:
 
 ```
-rhc app create <APP> aerogear-push mysql-5.1
+rhc app create <APP> https://cartreflect-claytondev.rhcloud.com/reflect?github=aerogear/openshift-origin-cartridge-aerogear-push mysql-5.1
 ```
 
 ## Template Repository Layout

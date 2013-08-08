@@ -5,9 +5,9 @@ Description: "AeroGear UnifiedPush Server is a server that allows native push no
 Version: 0.8.0
 License: LGPL
 License-Url: http://www.gnu.org/copyleft/lesser.txt
-Vendor: Red Hat
+Vendor: AeroGear
 Cartridge-Version: 0.0.1
-Cartridge-Vendor: redhat
+Cartridge-Vendor: aerogear
 Categories:
   - service
   - web_framework
