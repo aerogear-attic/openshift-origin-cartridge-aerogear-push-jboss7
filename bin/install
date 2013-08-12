@@ -22,6 +22,10 @@ ln -s ${OPENSHIFT_AEROGEAR_PUSH_DIR}/versions/${version}/modules/org/jboss/aerog
 mkdir -p ${OPENSHIFT_AEROGEAR_PUSH_DIR}/usr/modules/org/jboss/aerogear/simplepush/main
 ln -s ${OPENSHIFT_AEROGEAR_PUSH_DIR}/versions/${version}/modules/org/jboss/aerogear/simplepush/main/* ${OPENSHIFT_AEROGEAR_PUSH_DIR}/usr/modules/org/jboss/aerogear/simplepush/main
 
+# Generate the token key for SimplePush
+token_key=$(generate_password)
+echo "$token_key" > ${OPENSHIFT_AEROGEAR_PUSH_DIR}/env/OPENSHIFT_AEROGEAR_PUSH_TOKEN_KEY
+
 JBOSS_HOME=/etc/alternatives/jbossas-7
 pushd $OPENSHIFT_AEROGEAR_PUSH_DIR 1> /dev/null
   ln -s ${JBOSS_HOME}/jboss-modules.jar
