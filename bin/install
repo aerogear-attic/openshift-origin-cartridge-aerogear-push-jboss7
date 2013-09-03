@@ -38,5 +38,5 @@ client_result "Aerogear Push Server added.  Please make note of these default cr
 client_result ""
 client_result "           User: admin"
 client_result "       Password: 123"
-client_result " Connection URL: https://${OPENSHIFT_APP_DNS}:8443/simplepush"
+client_result ' Connection URL: https://$OPENSHIFT_APP_DNS:8443/simplepush'
 client_result ""
