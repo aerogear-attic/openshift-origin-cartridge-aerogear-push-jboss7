@@ -32,3 +32,11 @@ touch ${OPENSHIFT_AEROGEAR_PUSH_DIR}/env/OPENSHIFT_AEROGEAR_PUSH_CLUSTER
 touch ${OPENSHIFT_AEROGEAR_PUSH_DIR}/env/OPENSHIFT_AEROGEAR_PUSH_CLUSTER_REMOTING
 
 update-configuration java7
+
+client_result ""
+client_result "Aerogear Push Server added.  Please make note of these default credentials:"
+client_result ""
+client_result "           User: admin"
+client_result "       Password: 123"
+client_result " Connection URL: https://${OPENSHIFT_APP_DNS}:8443/simplepush"
+client_result ""
