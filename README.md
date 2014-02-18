@@ -17,9 +17,9 @@ rhc app create --no-git <APP> https://cartreflect-claytondev.rhcloud.com/reflect
 
 #### Administration Console
 
-Once the server is running access it via ```http://{APP}-{NAMESPACE}-rhcloud.com```. Check the Administration console [user guide](http://aerogear.org/docs/guides/AdminConsoleGuide/) for more information on using the console.
+Once the server is running access it via ```http://{APP}-{NAMESPACE}.rhcloud.com```. Check the Administration console [user guide](http://aerogear.org/docs/guides/AdminConsoleGuide/) for more information on using the console.
 
-**NOTE:** Besides the __Administration console_, the server can be accessed over RESTful APIs, as explained in the _AeroGear UnifiedPush Server_ [README](https://github.com/aerogear/aerogear-unified-push-server/blob/master/README.md). When executing the curl commands specified, you'll need to replace all instances of ```http://localhost:8080/ag-push``` with your OpenShift application URL ```http://{APP}-{NAMESPACE}-rhcloud.com```. 
+**NOTE:** Besides the __Administration console_, the server can be accessed over RESTful APIs, as explained in the _AeroGear UnifiedPush Server_ [README](https://github.com/aerogear/aerogear-unified-push-server/blob/master/README.md). When executing the curl commands specified, you'll need to replace all instances of ```http://localhost:8080/ag-push``` with your OpenShift application URL ```http://{APP}-{NAMESPACE}.rhcloud.com```. 
 
 #### Login
 
@@ -29,15 +29,15 @@ Temporarily, there is an "admin:123" user.  On _first_ login,  you will need to 
 
 #### Client connections
 
-For _secured_ connections, client applications should connect to the _AeroGear SimplePush Server_ via ```https://{APP}-{NAMESPACE}-rhcloud.com:8443/simplepush```.
+For _secured_ connections, client applications should connect to the _AeroGear SimplePush Server_ via ```https://{APP}-{NAMESPACE}.rhcloud.com:8443/simplepush```.
 
-For _unsecured_ connections, client applications can connect to the _AeroGear SimplePush Server_ via ```http://{APP}-{NAMESPACE}-rhcloud.com:8000/simplepush```.
+For _unsecured_ connections, client applications can connect to the _AeroGear SimplePush Server_ via ```http://{APP}-{NAMESPACE}.rhcloud.com:8000/simplepush```.
 
 **NOTE:** It is recommended that you always use _secured_ connections.
 
 #### Known issue with an idled OpenShift application and WebSocket requests
 
-Currently, if your AeroGear Push Server application is [idled by OpenShift](https://www.openshift.com/faq/what-happens-if-my-application-is-not-used-for-a-long-time), attempts to establish a WebSocket connection to the _AeroGear SimplePush Server_ will not wake up your idled application. This is a known issue (see [AEROGEAR-1296](https://issues.jboss.org/browse/AEROGEAR-1296)) and will be fixed in a future release of OpenShift Online. Note that requests to your application on port 80 (i.e., ```http://{APP}-{NAMESPACE}-rhcloud.com```) will wake up your idled application.
+Currently, if your AeroGear Push Server application is [idled by OpenShift](https://www.openshift.com/faq/what-happens-if-my-application-is-not-used-for-a-long-time), attempts to establish a WebSocket connection to the _AeroGear SimplePush Server_ will not wake up your idled application. This is a known issue (see [AEROGEAR-1296](https://issues.jboss.org/browse/AEROGEAR-1296)) and will be fixed in a future release of OpenShift Online. Note that requests to your application on port 80 (i.e., ```http://{APP}-{NAMESPACE}.rhcloud.com```) will wake up your idled application.
 
 
 ### Template Repository Layout
