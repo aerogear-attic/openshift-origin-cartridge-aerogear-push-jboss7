@@ -53,7 +53,7 @@
 
     <profile>
         <subsystem xmlns="urn:org.jboss.aerogear.simplepush:1.0">
-            <server socket-binding="simplepush" password="${env.OPENSHIFT_AEROGEAR_PUSH_TOKEN_KEY}" endpoint-tls="true" sockjs-session-timeout="604800000" endpoint-socket-binding="simplepush-notify">
+            <server socket-binding="simplepush" password="${env.OPENSHIFT_AEROGEAR_PUSH_TOKEN_KEY}" endpoint-tls="true" endpoint-socket-binding="simplepush-notify">
                 <datastore>
                     <jpa datasource-jndi-name="java:jboss/datasources/SimplePushDS" persistence-unit="SimplePushPU"/>
                 </datastore>
