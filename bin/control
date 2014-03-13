@@ -179,7 +179,7 @@ function post_restore {
   if [ -s $OPENSHIFT_DATA_DIR/aerogear_push_token_key ]; then
     TOKEN_KEY=$(< $OPENSHIFT_DATA_DIR/aerogear_push_token_key)
     echo $TOKEN_KEY > $OPENSHIFT_AEROGEAR_PUSH_DIR/env/OPENSHIFT_AEROGEAR_PUSH_TOKEN_KEY
-    sed -i "s/token-key=\"[^\"]\+\"/token-key=\"$TOKEN_KEY\"/" $JBOSSAS_STANDALONE_DIR/configuration/standalone.xml > /dev/null 2>&1
+    sed -i "s/<server socket-binding=\"simplepush\"\(.*\) password=\"[^\"]\+\"/<server socket-binding=\"simplepush\"\1 password=\"$TOKEN_KEY\"/" $JBOSSAS_STANDALONE_DIR/configuration/standalone.xml > /dev/null 2>&1
   fi
 
   if [ -s $OPENSHIFT_DATA_DIR/standalone.snapshot.xml ]; then
