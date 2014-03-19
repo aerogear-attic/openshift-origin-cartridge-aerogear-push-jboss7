@@ -30,5 +30,11 @@ locked_files:
 - versions/0.9.0/modules/org/jboss/aerogear/simplepush/
 - versions/0.9.0/modules/org/jboss/aerogear/simplepush/main/
 - versions/0.9.0/modules/org/jboss/aerogear/simplepush/main/*
+- versions/0.10.0/modules/org/
+- versions/0.10.0/modules/org/jboss/
+- versions/0.10.0/modules/org/jboss/aerogear/
+- versions/0.10.0/modules/org/jboss/aerogear/simplepush/
+- versions/0.10.0/modules/org/jboss/aerogear/simplepush/main/
+- versions/0.10.0/modules/org/jboss/aerogear/simplepush/main/*
 processed_templates:
 - '**/*.erb'
