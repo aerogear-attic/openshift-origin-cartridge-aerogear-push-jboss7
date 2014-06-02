@@ -66,6 +66,9 @@ Publishes:
   publish-jboss-remoting:
     Type: "NET_TCP:jbossas-remoting-info"
 Subscribes:
+  set-env:
+    Type: ENV:*
+    Required: false
   set-db-connection-info:
     Type: "ENV:NET_TCP:db:connection-info"
     Required: false
