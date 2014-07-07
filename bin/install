@@ -11,8 +11,10 @@ echo "$version" > "$OPENSHIFT_AEROGEAR_PUSH_DIR/env/OPENSHIFT_AEROGEAR_PUSH_VERS
 
 ln -s ${OPENSHIFT_AEROGEAR_PUSH_DIR}/standalone/log ${OPENSHIFT_AEROGEAR_PUSH_DIR}/logs
 
-# Install the UnifiedPush Server WAR
-cp ${OPENSHIFT_AEROGEAR_PUSH_DIR}/versions/${version}/standalone/deployments/ag-push.war $OPENSHIFT_AEROGEAR_PUSH_DIR/standalone/deployments/ROOT.war
+# Install the UnifiedPush Server WARs (auth and core)
+cp ${OPENSHIFT_AEROGEAR_PUSH_DIR}/versions/${version}/standalone/deployments/auth-server.war $OPENSHIFT_AEROGEAR_PUSH_DIR/standalone/deployments
+cp ${OPENSHIFT_AEROGEAR_PUSH_DIR}/versions/${version}/standalone/deployments/ag-push.war $OPENSHIFT_AEROGEAR_PUSH_DIR/standalone/deployments
+
 
 # Add the AeroGear SimplePush module
 mkdir -p ${OPENSHIFT_AEROGEAR_PUSH_DIR}/usr/modules/org/jboss/aerogear/simplepush/main
@@ -38,5 +40,5 @@ client_result "Aerogear Push Server added.  Please make note of these default cr
 client_result ""
 client_result "           User: admin"
 client_result "       Password: 123"
-client_result ' Connection URL: https://$OPENSHIFT_APP_DNS'
+client_result ' Connection URL: https://$OPENSHIFT_APP_DNS/ag-push'
 client_result ""
