@@ -20,12 +20,12 @@
 <module xmlns="urn:jboss:module:1.1" name="org.jboss.aerogear.simplepush">
 
     <resources>
-        <resource-root path="aerogear-simplepush-common-0.11.0-SNAPSHOT.jar"/>
-        <resource-root path="aerogear-simplepush-server-api-0.11.0-SNAPSHOT.jar"/>
-        <resource-root path="aerogear-simplepush-server-core-0.11.0-SNAPSHOT.jar"/>
-        <resource-root path="aerogear-simplepush-server-netty-0.11.0-SNAPSHOT.jar"/>
-        <resource-root path="aerogear-simplepush-protocol-0.11.0-SNAPSHOT.jar"/>
-        <resource-root path="aerogear-simplepush-server-wildfly-0.11.0-SNAPSHOT.jar"/>
+        <resource-root path="aerogear-simplepush-common-0.11.0.jar"/>
+        <resource-root path="aerogear-simplepush-server-api-0.11.0.jar"/>
+        <resource-root path="aerogear-simplepush-server-core-0.11.0.jar"/>
+        <resource-root path="aerogear-simplepush-server-netty-0.11.0.jar"/>
+        <resource-root path="aerogear-simplepush-protocol-0.11.0.jar"/>
+        <resource-root path="aerogear-simplepush-server-wildfly-0.11.0.jar"/>
         <resource-root path="jackson-core-2.3.0.jar"/>
         <resource-root path="jackson-databind-2.3.0.jar"/>
         <resource-root path="jackson-annotations-2.3.0.jar"/>
@@ -35,14 +35,14 @@
         <!-- Enables files to be placed in the module made availble via the classloader. -->
         <resource-root path="."/>
         <!-- The following resource should be replaced by netty-codec-sockjs once it is released -->
-        <resource-root path="aerogear-netty-codec-sockjs-0.11.0-SNAPSHOT.jar"/>
+        <resource-root path="aerogear-netty-codec-sockjs-0.11.0.jar"/>
         
-        <resource-root path="aerogear-simplepush-datastore-in-memory-0.11.0-SNAPSHOT.jar"/>
-        <resource-root path="aerogear-simplepush-datastore-redis-0.11.0-SNAPSHOT.jar"/>
+        <resource-root path="aerogear-simplepush-datastore-in-memory-0.11.0.jar"/>
+        <resource-root path="aerogear-simplepush-datastore-redis-0.11.0.jar"/>
         <resource-root path="commons-pool-1.5.5.jar"/>
         <resource-root path="jedis-2.0.0.jar"/>
-        <resource-root path="aerogear-simplepush-datastore-jpa-0.11.0-SNAPSHOT.jar"/>
-        <resource-root path="aerogear-simplepush-datastore-couchdb-0.11.0-SNAPSHOT.jar"/>
+        <resource-root path="aerogear-simplepush-datastore-jpa-0.11.0.jar"/>
+        <resource-root path="aerogear-simplepush-datastore-couchdb-0.11.0.jar"/>
         <resource-root path="org.ektorp-1.4.1.jar"/>
         <resource-root path="httpcore-4.2.4.jar"/>
         <resource-root path="httpclient-4.2.5.jar"/>
