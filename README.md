@@ -10,16 +10,14 @@ The [AeroGear SimplePush Server](https://github.com/aerogear/aerogear-simplepush
 The AeroGear Push Server cartridge defaults to using MySQL. When creating your application, you'll also want to add the MySQL cartridge:
 
 ```
-rhc app create --no-git <APP> https://cartreflect-claytondev.rhcloud.com/reflect?github=aerogear/openshift-origin-cartridge-aerogear-push mysql-5.1
+rhc app create --no-git <APP> https://cartreflect-claytondev.rhcloud.com/reflect?github=aerogear/openshift-origin-cartridge-aerogear-push
 ```
 
 ### Getting started with the AeroGear UnifiedPush Server
 
 #### Administration Console
 
-Once the server is running access it via ```http://{APP}-{NAMESPACE}.rhcloud.com```. Check the Administration console [user guide](http://aerogear.org/docs/guides/AdminConsoleGuide/) for more information on using the console.
-
-**NOTE:** Besides the __Administration console_, the server can be accessed over RESTful APIs, as explained in the _AeroGear UnifiedPush Server_ [README](https://github.com/aerogear/aerogear-unified-push-server/blob/master/README.md). When executing the curl commands specified, you'll need to replace all instances of ```http://localhost:8080/ag-push``` with your OpenShift application URL ```http://{APP}-{NAMESPACE}.rhcloud.com```. 
+Once the server is running access it via ```https://{APP}-{NAMESPACE}.rhcloud.com/ag-push```. Check the Administration console [user guide](http://aerogear.org/docs/guides/AdminConsoleGuide/) for more information on using the console.
 
 #### Login
 
