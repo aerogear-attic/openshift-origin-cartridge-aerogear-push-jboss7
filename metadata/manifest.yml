@@ -15,7 +15,7 @@ Categories:
   - jboss
   - jee_full_profile
 Requires:
-  - mysql
+  - mysql-5.5
 Website: http://aerogear.org
 Help-Topics:
   "Developer Center": https://www.openshift.com/developers
