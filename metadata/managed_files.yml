@@ -1,4 +1,7 @@
 ---
+snapshot_exclusions:
+- ~/aerogear-push/versions
+- ~/aerogear-push/modules
 locked_files:
 - bin/
 - bin/*
@@ -9,7 +12,6 @@ locked_files:
 - env/OPENSHIFT_AEROGEAR_PUSH_LOG_DIR
 - env/OPENSHIFT_AEROGEAR_PUSH_JDK*
 - env/OPENSHIFT_AEROGEAR_PUSH_VERSION
-- env/OPENSHIFT_AEROGEAR_PUSH_TOKEN_KEY
 - env/M2_HOME
 - standalone/deployments/*
 - usr/modules/org/
