@@ -110,7 +110,7 @@ Endpoints:
     Mappings:
       - Frontend:      ""
         Backend:       ""
-        Options:       { "websocket": 1}
+        Options:       { "websocket": 1, "tohttps": 1}
       - Frontend:      "/health"
         Backend:       ""
         Options:       { health: true }
