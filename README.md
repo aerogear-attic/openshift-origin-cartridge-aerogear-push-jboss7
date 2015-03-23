@@ -1,5 +1,7 @@
 # OpenShift AeroGear Push Server Cartridge
 
+_This cartridge is deprecated_
+
 Provides the _AeroGear UnifiedPush Server_ running on top of JBoss Application Server on OpenShift and embeds the _AeroGear SimplePush Server_ within JBoss Application Server on OpenShift. 
 
 |                 | Project Info  |
@@ -19,7 +21,7 @@ The [AeroGear SimplePush Server](https://github.com/aerogear/aerogear-simplepush
 The AeroGear Push Server cartridge defaults to using MySQL. When creating your application, you'll also want to add the MySQL cartridge:
 
 ```
-rhc app create --no-git <APP> https://cartreflect-claytondev.rhcloud.com/reflect?github=aerogear/openshift-origin-cartridge-aerogear-push
+rhc app create --no-git <APP> https://cartreflect-claytondev.rhcloud.com/reflect?github=aerogear/openshift-origin-cartridge-aerogear-push-jboss7
 ```
 
 ### Getting started with the AeroGear UnifiedPush Server
