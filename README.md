@@ -1,6 +1,6 @@
 # OpenShift AeroGear Push Server Cartridge
 
-_This cartridge is deprecated_
+**DEPRECATED:** This is based on OpenShift 2 and JBoss AS7, and is no longer supported. Users are asked to check out the AeroGear community template for Openshift 3: https://github.com/aerogear/aerogear-unifiedpush-server/tree/master/openshift  
 
 Provides the _AeroGear UnifiedPush Server_ running on top of JBoss Application Server on OpenShift and embeds the _AeroGear SimplePush Server_ within JBoss Application Server on OpenShift. 
 
